@@ -1,0 +1,72 @@
+*{
+    padding:0px;
+    margin: 0px;
+    -webkit-touch-callout: none; /* anula el efecto visual del touch prolongado sobre el objeto */
+
+    user-select: none; /* user-select, hace el objeto no seleccionable */
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* anula el feedback de color al hacer tap en un link */
+    -webkit-tap-highlight-color: transparent; /* similar anterior en algunos android */
+}
+#contenedor {
+    border: 1px solid #73AD21;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap:wrap;
+}
+
+
+
+
+body{
+  font-family: 'Droid Sans', 'Helvetica', Arial, sans-serif;
+}
+
+
+#latlng{
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute; /* posición absoluta a navegador */
+  top: 0;             /* ajusta a borde de navegador */
+  left: 0;
+  right: 0;
+  width: 100%
+  height: 60px;
+  font-size: 150%;
+}
+
+
+#map{
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute; /* posición absoluta a navegador */
+  top: 70px;      /* 50px debajo de borde de navegador */
+  left: 0;        /* ajusta a borde de navegador */
+  right: 0;
+  bottom: 0;
+  background: rgba(0,255,0,0.5); /* verde si no hay mapa */
+}
+
+
+button{
+
+  text-align: center;
+  align-content: right;
+  background-color:yellow;
+  color: black;
+  border: none; 
+  border-radius: 10px 10px 10px 10px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 100, 100, 0.5);
+}
+
+button:hover{
+	background-color:red;
+	cursor:pointer;
+}
